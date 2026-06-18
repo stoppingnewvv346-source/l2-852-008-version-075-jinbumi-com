@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://young-band-ba97.laodayizhi.workers.dev/ads-widget.js"></script>
+<title>热门排行榜-高清剧集大全</title>
+  <meta name="description" content="热门电视剧排行榜，整理高热度精选剧集、电影和片单入口。">
+  <meta name="keywords" content="电视剧排行榜,热门剧集,推荐电视剧,电视剧推荐,热门电视剧,精选剧集,剧集大全,高清播放">
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body class="min-h-screen bg-gradient-to-b from-amber-50 to-orange-50 text-gray-800">
+<header class="sticky top-0 z-50 bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 shadow-lg">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <a href="./index.html" class="flex items-center space-x-2 group" aria-label="高清剧集大全">
+        <span class="bg-white p-2 rounded-full group-hover:scale-110 transition-transform duration-300 logo-mark">▶</span>
+        <span class="text-white font-bold text-xl tracking-wide hidden sm:block">高清剧集大全</span>
+      </a>
+      <nav class="hidden md:flex items-center space-x-8" aria-label="主导航">
+        <a href="./index.html" class="text-white hover:text-amber-100 font-medium transition-colors duration-200">首页</a>
+        <a href="./categories.html" class="text-white hover:text-amber-100 font-medium transition-colors duration-200">分类浏览</a>
+        <a href="./rankings.html" class="text-white hover:text-amber-100 font-medium transition-colors duration-200">排行榜</a>
+        <a href="./search.html" class="text-white hover:text-amber-100 font-medium transition-colors duration-200">全站搜索</a>
+      </nav>
+      <button type="button" data-menu-button class="md:hidden text-white hover:text-amber-100 transition-colors duration-200" aria-label="打开导航">
+        <span class="menu-icon">☰</span>
+      </button>
+    </div>
+  </div>
+  <div class="md:hidden bg-amber-600 border-t border-amber-400 hidden" data-mobile-menu>
+    <div class="px-4 pt-2 pb-4 space-y-2">
+      <a href="./index.html" class="block py-2 text-white hover:text-amber-100 font-medium transition-colors duration-200">首页</a>
+      <a href="./categories.html" class="block py-2 text-white hover:text-amber-100 font-medium transition-colors duration-200">分类浏览</a>
+      <a href="./rankings.html" class="block py-2 text-white hover:text-amber-100 font-medium transition-colors duration-200">排行榜</a>
+      <a href="./search.html" class="block py-2 text-white hover:text-amber-100 font-medium transition-colors duration-200">全站搜索</a>
+      <div class="pt-2 border-t border-amber-400">
+        <p class="text-amber-100 text-sm font-medium mb-2">热门分类</p>
+        <div class="grid grid-cols-2 gap-2">
+              <a href="./category-drama.html" class="text-white text-sm hover:text-amber-100 transition-colors duration-200">剧情佳作</a>
+              <a href="./category-comedy.html" class="text-white text-sm hover:text-amber-100 transition-colors duration-200">喜剧热播</a>
+              <a href="./category-mystery.html" class="text-white text-sm hover:text-amber-100 transition-colors duration-200">悬疑惊悚</a>
+              <a href="./category-action.html" class="text-white text-sm hover:text-amber-100 transition-colors duration-200">动作战争</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="relative bg-gradient-to-r from-amber-500 via-orange-500 to-yellow-500 text-white py-20 overflow-hidden inner-hero">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">热门排行榜</h1>
+      <p class="text-xl md:text-2xl text-amber-100 max-w-3xl mx-auto">按内容热度、年份表现和题材关注度整理热门好看的电视剧与精选影视榜单。</p>
+    </div>
+  </section>
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+<div class="bg-white rounded-2xl shadow-lg p-4 md:p-6 mb-8" data-filter-form>
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+    <label class="md:col-span-2">
+      <span class="sr-only">搜索片名</span>
+      <input type="search" data-search-input class="w-full px-4 py-3 rounded-xl border border-gray-200 focus-ring" placeholder="搜索片名、地区、类型或标签">
+    </label>
+    <label>
+      <span class="sr-only">筛选类型</span>
+      <select data-genre-select class="w-full px-4 py-3 rounded-xl border border-gray-200 focus-ring bg-white">
+        <option value="">全部类型</option>
+          <option value="都市喜剧">都市喜剧</option>
+          <option value="悬疑">悬疑</option>
+          <option value="惊悚">惊悚</option>
+          <option value="心理">心理</option>
+          <option value="历史">历史</option>
+          <option value="剧情">剧情</option>
+          <option value="喜剧">喜剧</option>
+          <option value="恐怖">恐怖</option>
+          <option value="日常">日常</option>
+          <option value="犯罪">犯罪</option>
+          <option value="动作">动作</option>
+          <option value="家庭">家庭</option>
+          <option value="冒险">冒险</option>
+          <option value="自然地理历史纪录片">自然地理历史纪录片</option>
+          <option value="科幻">科幻</option>
+          <option value="古装">古装</option>
+          <option value="奇幻">奇幻</option>
+          <option value="爱情">爱情</option>
+          <option value="校园">校园</option>
+          <option value="治愈">治愈</option>
+          <option value="传记">传记</option>
+          <option value="女性">女性</option>
+          <option value="战争">战争</option>
+          <option value="推理">推理</option>
+          <option value="情色">情色</option>
+          <option value="伦理">伦理</option>
+          <option value="青春">青春</option>
+          <option value="警务">警务</option>
+          <option value="动作枪战">动作枪战</option>
+          <option value="动画">动画</option>
+      </select>
+    </label>
+    <button type="button" data-filter-reset class="bg-gradient-to-r from-amber-500 to-orange-500 text-white px-6 py-3 rounded-xl font-semibold hover:from-amber-600 hover:to-orange-600 transition-all duration-300">重置筛选</button>
+  </div>
+</div>
+    <div class="space-y-4 ranking-list">
+<a href="./movie-555.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="香港天堂" data-genre="科幻,犯罪,赛博朋克" data-year="2029" data-region="中国香港">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gradient-to-br from-amber-400 to-orange-500 text-white">1</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./105.jpg" alt="香港天堂" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">香港天堂</h2>
+    <p class="text-sm text-gray-500 truncate">2047年的九龙城寨废墟中,最后一个人类维修师必须修复一位拥有她死去女儿记忆的义体人,才能逃离这座即将被炸毁的“天堂”。</p>
+    <p class="text-xs text-gray-400 mt-1">2029 · 中国香港 · 科幻,犯罪,赛博朋克</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-288.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="顽童艳福" data-genre="喜剧,爱情" data-year="2026" data-region="中国香港">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gradient-to-br from-amber-400 to-orange-500 text-white">2</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./138.jpg" alt="顽童艳福" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">顽童艳福</h2>
+    <p class="text-sm text-gray-500 truncate">七十岁的老顽童意外变回七岁,却保留着全部情史记忆,被迫在幼儿园里重新追当年的白月光。</p>
+    <p class="text-xs text-gray-400 mt-1">2026 · 中国香港 · 喜剧,爱情</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-315.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="全能纳米机械狗" data-genre="科幻,喜剧,冒险" data-year="2026" data-region="中国大陆">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gradient-to-br from-amber-400 to-orange-500 text-white">3</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./15.jpg" alt="全能纳米机械狗" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">全能纳米机械狗</h2>
+    <p class="text-sm text-gray-500 truncate">废柴青年捡到一只高科技流浪狗,这只狗不仅会垃圾分类,还能变形为任何家用电器。</p>
+    <p class="text-xs text-gray-400 mt-1">2026 · 中国大陆 · 科幻,喜剧,冒险</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-482.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="星期一的硕果第一季" data-genre="爱情、喜剧、职场" data-year="2026" data-region="日本">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">4</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./32.jpg" alt="星期一的硕果第一季" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">星期一的硕果第一季</h2>
+    <p class="text-sm text-gray-500 truncate">每个周一早晨,都有一颗神秘的新鲜果实准时出现在设计部菜鸟工位上。</p>
+    <p class="text-xs text-gray-400 mt-1">2026 · 日本 · 爱情、喜剧、职场</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-567.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="北斗前锋粤语" data-genre="科幻/动作/警匪" data-year="2026" data-region="中国香港">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">5</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./117.jpg" alt="北斗前锋粤语" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">北斗前锋粤语</h2>
+    <p class="text-sm text-gray-500 truncate">2046年的香港,警察用上了反重力机甲,但黑帮的科技比警察领先整整一个世代,只有“北斗前锋”小队敢正面硬刚。</p>
+    <p class="text-xs text-gray-400 mt-1">2026 · 中国香港 · 科幻/动作/警匪</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-935.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="在撒哈拉世界的大门" data-genre="剧情,公路,神秘" data-year="2026" data-region="摩洛哥/法国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">6</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./35.jpg" alt="在撒哈拉世界的大门" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">在撒哈拉世界的大门</h2>
+    <p class="text-sm text-gray-500 truncate">一个女人收到已失踪三十年的父亲从撒哈拉寄来的明信片,背面只有一个数学公式。</p>
+    <p class="text-xs text-gray-400 mt-1">2026 · 摩洛哥/法国 · 剧情,公路,神秘</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1206.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="伊克巴尔之超级芯片" data-genre="冒险/科幻" data-year="2026" data-region="印度">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">7</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./6.jpg" alt="伊克巴尔之超级芯片" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">伊克巴尔之超级芯片</h2>
+    <p class="text-sm text-gray-500 truncate">一个来自印度贫民窟的天才少年,捡到了一块来自未来的超级芯片,并将其植入脑内,从此拥有了改变命运的力量。</p>
+    <p class="text-xs text-gray-400 mt-1">2026 · 印度 · 冒险/科幻</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1242.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="永不言死" data-genre="奇幻,悬疑,剧情" data-year="2026" data-region="韩国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">8</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./42.jpg" alt="永不言死" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">永不言死</h2>
+    <p class="text-sm text-gray-500 truncate">一个从朝鲜时代活到2026年的不死之人,每个世纪都会爱上同一个人,而对方每次都会在他面前死去。</p>
+    <p class="text-xs text-gray-400 mt-1">2026 · 韩国 · 奇幻,悬疑,剧情</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1397.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="大偷袭" data-genre="动作/战争" data-year="2026" data-region="美国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">9</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./47.jpg" alt="大偷袭" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">大偷袭</h2>
+    <p class="text-sm text-gray-500 truncate">一支美军特种小队深入缅甸营救人质,却发现目标早已被当地武装“处决”。</p>
+    <p class="text-xs text-gray-400 mt-1">2026 · 美国 · 动作/战争</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1400.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="芭啦芭啦樱之花" data-genre="爱情,音乐" data-year="2026" data-region="日本,中国台湾">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">10</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./50.jpg" alt="芭啦芭啦樱之花" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">芭啦芭啦樱之花</h2>
+    <p class="text-sm text-gray-500 truncate">失语的花艺师与过气的樱花舞者在东京的最后一个春天,用身体和花瓣重新学会了说话。</p>
+    <p class="text-xs text-gray-400 mt-1">2026 · 日本,中国台湾 · 爱情,音乐</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1418.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="蒙大拿故事" data-genre="剧情/西部" data-year="2026" data-region="美国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">11</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./68.jpg" alt="蒙大拿故事" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">蒙大拿故事</h2>
+    <p class="text-sm text-gray-500 truncate">一个华尔街女基金经理被裁员后回到蒙大拿老家,发现濒临破产的牧场唯一的出路竟然是卖掉风力权给仇人。</p>
+    <p class="text-xs text-gray-400 mt-1">2026 · 美国 · 剧情/西部</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1487.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="绝命空间" data-genre="悬疑/惊悚" data-year="2026" data-region="韩国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">12</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./137.jpg" alt="绝命空间" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">绝命空间</h2>
+    <p class="text-sm text-gray-500 truncate">八个互不相识的人被困在一间不断变形的智能公寓中,每解开一谜题,就揭露一个被社会掩埋的真相。</p>
+    <p class="text-xs text-gray-400 mt-1">2026 · 韩国 · 悬疑/惊悚</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1583.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="消失的凶手" data-genre="悬疑,犯罪,推理" data-year="2026" data-region="中国大陆">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">13</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./83.jpg" alt="消失的凶手" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">消失的凶手</h2>
+    <p class="text-sm text-gray-500 truncate">侦探受困于一座暴风雪中的山庄,每出现一具尸体,所有人关于死者的记忆就会消失一部分。</p>
+    <p class="text-xs text-gray-400 mt-1">2026 · 中国大陆 · 悬疑,犯罪,推理</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1900.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="一日暴毙" data-genre="悬疑、犯罪" data-year="2026" data-region="中国大陆">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">14</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./100.jpg" alt="一日暴毙" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">一日暴毙</h2>
+    <p class="text-sm text-gray-500 truncate">一名破产老板收到死亡预告:你将活不过今天。每过一小时,预告就精确更新一次死法。</p>
+    <p class="text-xs text-gray-400 mt-1">2026 · 中国大陆 · 悬疑、犯罪</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-84.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="光之屋" data-genre="悬疑/奇幻" data-year="2025" data-region="西班牙/阿根廷">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">15</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./84.jpg" alt="光之屋" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">光之屋</h2>
+    <p class="text-sm text-gray-500 truncate">一座与世隔绝的灯塔,三位守塔人,在一场持续百年的风暴中,只有两个人能活着走出时间循环。</p>
+    <p class="text-xs text-gray-400 mt-1">2025 · 西班牙/阿根廷 · 悬疑/奇幻</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-208.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="派遣女公关彩华" data-genre="剧情、职场、悬疑、女性" data-year="2025" data-region="日本">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">16</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./58.jpg" alt="派遣女公关彩华" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">派遣女公关彩华</h2>
+    <p class="text-sm text-gray-500 truncate">前刑警彩华化身银座头牌公关,周旋于政商名流间破解委托案件。</p>
+    <p class="text-xs text-gray-400 mt-1">2025 · 日本 · 剧情、职场、悬疑、女性</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-284.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="世界,众生和恶魔" data-genre="科幻,心理惊悚" data-year="2025" data-region="美国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">17</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./134.jpg" alt="世界,众生和恶魔" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">世界,众生和恶魔</h2>
+    <p class="text-sm text-gray-500 truncate">一场全球灾难后,最后一个男人发现所有幸存者都是他脑中“恶魔”的化身。</p>
+    <p class="text-xs text-gray-400 mt-1">2025 · 美国 · 科幻,心理惊悚</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-398.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="爱上查美乐" data-genre="爱情/喜剧" data-year="2025" data-region="中国台湾">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">18</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./98.jpg" alt="爱上查美乐" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">爱上查美乐</h2>
+    <p class="text-sm text-gray-500 truncate">毒舌美食评论家意外失去味觉,唯一能救他的竟是那个在夜市卖黑暗料理的傻白甜。</p>
+    <p class="text-xs text-gray-400 mt-1">2025 · 中国台湾 · 爱情/喜剧</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-426.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="保卫人祖山" data-genre="战争,历史,动作" data-year="2025" data-region="中国大陆">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">19</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./126.jpg" alt="保卫人祖山" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">保卫人祖山</h2>
+    <p class="text-sm text-gray-500 truncate">1942年,一队散兵游勇联合守山村民,用娲皇娘娘留下的“神话机关”对抗日军。</p>
+    <p class="text-xs text-gray-400 mt-1">2025 · 中国大陆 · 战争,历史,动作</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-448.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="众神与野兽" data-genre="奇幻,剧情" data-year="2025" data-region="英国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">20</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./148.jpg" alt="众神与野兽" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">众神与野兽</h2>
+    <p class="text-sm text-gray-500 truncate">战地记者意外继承北欧雷神之力,却发现自己内心住着一头渴望毁灭的野兽。</p>
+    <p class="text-xs text-gray-400 mt-1">2025 · 英国 · 奇幻,剧情</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-480.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="百万富翁的初恋" data-genre="爱情/剧情/喜剧" data-year="2025" data-region="韩国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">21</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./30.jpg" alt="百万富翁的初恋" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">百万富翁的初恋</h2>
+    <p class="text-sm text-gray-500 truncate">为了继承百亿遗产,纨绔子弟必须在半年内拿到北大硕士文凭,并谈一场“真正的恋爱”。</p>
+    <p class="text-xs text-gray-400 mt-1">2025 · 韩国 · 爱情/剧情/喜剧</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-578.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="伊凡" data-genre="剧情/历史" data-year="2025" data-region="俄罗斯">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">22</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./128.jpg" alt="伊凡" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">伊凡</h2>
+    <p class="text-sm text-gray-500 truncate">少年伊凡意外发现自己是被流放的皇室后裔,一场夺回王位的征途却让他陷入更大的道德困境。</p>
+    <p class="text-xs text-gray-400 mt-1">2025 · 俄罗斯 · 剧情/历史</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-696.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="少年雷神" data-genre="动作/奇幻/冒险" data-year="2025" data-region="美国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">23</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./96.jpg" alt="少年雷神" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">少年雷神</h2>
+    <p class="text-sm text-gray-500 truncate">在成为雷神之前,少年托尔是一个只会用蛮力却举不起雷神之锤的废柴王子,他必须通过九界的入学考试。</p>
+    <p class="text-xs text-gray-400 mt-1">2025 · 美国 · 动作/奇幻/冒险</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-789.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="美味爱意" data-genre="美食,剧情,治愈" data-year="2025" data-region="日本">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">24</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./39.jpg" alt="美味爱意" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">美味爱意</h2>
+    <p class="text-sm text-gray-500 truncate">失去味觉的天才厨师回到乡下老家,吃着母亲做的难吃料理,竟一点点找回了爱与味道的记忆。</p>
+    <p class="text-xs text-gray-400 mt-1">2025 · 日本 · 美食,剧情,治愈</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-844.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="人间有味山河鲜第二季" data-genre="纪录片/美食" data-year="2025" data-region="中国大陆">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">25</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./94.jpg" alt="人间有味山河鲜第二季" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">人间有味山河鲜第二季</h2>
+    <p class="text-sm text-gray-500 truncate">从长白山到南海,从雪山到沙漠,这一季不仅找鲜味,更找那些为了“鲜”字活了一辈子的人。</p>
+    <p class="text-xs text-gray-400 mt-1">2025 · 中国大陆 · 纪录片/美食</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-897.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="歌舞春光" data-genre="歌舞/爱情/剧情" data-year="2025" data-region="印度">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">26</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./147.jpg" alt="歌舞春光" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">歌舞春光</h2>
+    <p class="text-sm text-gray-500 truncate">印度洒红节当天,一位高种姓女孩和一位低种姓男孩的颜料互相洒到对方身上后,他们发现洗不掉的不只是颜色。</p>
+    <p class="text-xs text-gray-400 mt-1">2025 · 印度 · 歌舞/爱情/剧情</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-989.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="解剖室灵异事件之男生宿舍" data-genre="恐怖,悬疑" data-year="2025" data-region="中国大陆">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">27</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./89.jpg" alt="解剖室灵异事件之男生宿舍" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">解剖室灵异事件之男生宿舍</h2>
+    <p class="text-sm text-gray-500 truncate">医学院男生宿舍深夜总传来解剖室的门响,六个人发现,他们住的宿舍楼就建在老解剖室上面。</p>
+    <p class="text-xs text-gray-400 mt-1">2025 · 中国大陆 · 恐怖,悬疑</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1021.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="漫城" data-genre="科幻,悬疑" data-year="2025" data-region="中国大陆">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">28</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./121.jpg" alt="漫城" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">漫城</h2>
+    <p class="text-sm text-gray-500 truncate">在一座完全模仿热门漫画《漫城》建造的VR主题城里,一名游客被“画”死了。</p>
+    <p class="text-xs text-gray-400 mt-1">2025 · 中国大陆 · 科幻,悬疑</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1146.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="小初" data-genre="校园/剧情/成长" data-year="2025" data-region="中国大陆">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">29</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./96.jpg" alt="小初" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">小初</h2>
+    <p class="text-sm text-gray-500 truncate">为了考上重点初中,11岁的女孩小初被母亲送去“魔鬼补习班”,在那里她学会了作弊,也学会了反抗。</p>
+    <p class="text-xs text-gray-400 mt-1">2025 · 中国大陆 · 校园/剧情/成长</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1297.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="在峡谷的呼唤" data-genre="悬疑,冒险" data-year="2025" data-region="英国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">30</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./97.jpg" alt="在峡谷的呼唤" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">在峡谷的呼唤</h2>
+    <p class="text-sm text-gray-500 truncate">一个地质学家在科罗拉多大峡谷深处,听到了本不该存在的、来自十年前的回声。</p>
+    <p class="text-xs text-gray-400 mt-1">2025 · 英国 · 悬疑,冒险</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1321.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="大张旗鼓" data-genre="喜剧,动作" data-year="2025" data-region="中国大陆">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">31</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./121.jpg" alt="大张旗鼓" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">大张旗鼓</h2>
+    <p class="text-sm text-gray-500 truncate">一个破产的摇滚主唱回到老家,把村里的丧葬鼓乐队改造成了史上最躁的摇滚天团。</p>
+    <p class="text-xs text-gray-400 mt-1">2025 · 中国大陆 · 喜剧,动作</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1474.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="寂寞调香师" data-genre="剧情,爱情" data-year="2025" data-region="法国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">32</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./124.jpg" alt="寂寞调香师" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">寂寞调香师</h2>
+    <p class="text-sm text-gray-500 truncate">一位失明的天才调香师,为一位即将离世的陌生老人调配“记忆中的味道”,却治好了自己的心伤。</p>
+    <p class="text-xs text-gray-400 mt-1">2025 · 法国 · 剧情,爱情</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1662.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="疯狂褓姆" data-genre="喜剧、家庭、动作" data-year="2025" data-region="中国香港">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">33</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./12.jpg" alt="疯狂褓姆" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">疯狂褓姆</h2>
+    <p class="text-sm text-gray-500 truncate">退隐女特工为了任务伪装成憨厚保姆,却发现最难搞的不是歹徒而是熊孩子。</p>
+    <p class="text-xs text-gray-400 mt-1">2025 · 中国香港 · 喜剧、家庭、动作</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1667.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="饥饿游戏:星火燎原" data-genre="动作、科幻、冒险" data-year="2025" data-region="美国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">34</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./17.jpg" alt="饥饿游戏:星火燎原" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">饥饿游戏:星火燎原</h2>
+    <p class="text-sm text-gray-500 truncate">凯特尼斯赢得游戏后被迫参加冠军巡回赛,却发现赛制变成了一场真正的“革命导火索”,而她就是那根火柴。</p>
+    <p class="text-xs text-gray-400 mt-1">2025 · 美国 · 动作、科幻、冒险</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1698.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="哥本哈根爱情纪" data-genre="爱情,剧情" data-year="2025" data-region="丹麦">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">35</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./48.jpg" alt="哥本哈根爱情纪" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">哥本哈根爱情纪</h2>
+    <p class="text-sm text-gray-500 truncate">八个互不相识的陌生人,因为一次城市自行车共享系统的故障,命运交织在一起。</p>
+    <p class="text-xs text-gray-400 mt-1">2025 · 丹麦 · 爱情,剧情</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1716.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="美狄亚奇迹" data-genre="史诗奇幻" data-year="2025" data-region="希腊/意大利">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">36</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./66.jpg" alt="美狄亚奇迹" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">美狄亚奇迹</h2>
+    <p class="text-sm text-gray-500 truncate">美狄亚在杀死自己的孩子后,被众神诅咒永远无法死去,两千年来她以凡人之躯游历人间,只为找到一个能真正杀死她的方法。</p>
+    <p class="text-xs text-gray-400 mt-1">2025 · 希腊/意大利 · 史诗奇幻</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1791.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="中国已近" data-genre="剧情,公路" data-year="2025" data-region="德国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">37</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./141.jpg" alt="中国已近" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">中国已近</h2>
+    <p class="text-sm text-gray-500 truncate">一名波兰老列车长,在中欧班列上遇到一个不会说外语的中国工程师,两人穿越欧洲的旅程充满笑泪。</p>
+    <p class="text-xs text-gray-400 mt-1">2025 · 德国 · 剧情,公路</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1880.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="蛋壳" data-genre="惊悚悬疑" data-year="2025" data-region="韩国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">38</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./80.jpg" alt="蛋壳" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">蛋壳</h2>
+    <p class="text-sm text-gray-500 truncate">单身母亲发现死去的女儿每晚都从一颗神秘的巨蛋里重新孵化出来。</p>
+    <p class="text-xs text-gray-400 mt-1">2025 · 韩国 · 惊悚悬疑</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1881.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="毛骨悚然3:再开杀戒" data-genre="恐怖惊悚" data-year="2025" data-region="美国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">39</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./81.jpg" alt="毛骨悚然3:再开杀戒" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">毛骨悚然3:再开杀戒</h2>
+    <p class="text-sm text-gray-500 truncate">消声匿迹二十年的杀人魔“棺材哥”重现江湖,这一次他不再针对旅行者,而是锁定了当年办案的警察后代。</p>
+    <p class="text-xs text-gray-400 mt-1">2025 · 美国 · 恐怖惊悚</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1944.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="老小阿凡提" data-genre="动画、喜剧、历史" data-year="2025" data-region="中国大陆">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">40</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./144.jpg" alt="老小阿凡提" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">老小阿凡提</h2>
+    <p class="text-sm text-gray-500 truncate">老年阿凡提喝下了一口神奇的泉水变回了七八岁的小孩,他要用小孩的身体去教训贪财的巴依老爷。</p>
+    <p class="text-xs text-gray-400 mt-1">2025 · 中国大陆 · 动画、喜剧、历史</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-7.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="小鬼神偷" data-genre="喜剧,家庭,冒险" data-year="2024" data-region="美国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">41</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./7.jpg" alt="小鬼神偷" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">小鬼神偷</h2>
+    <p class="text-sm text-gray-500 truncate">一个十岁的天才黑客联手他退休的贼爷爷和两个废柴同学,目标是黑进学校系统改掉自己的零分考卷。</p>
+    <p class="text-xs text-gray-400 mt-1">2024 · 美国 · 喜剧,家庭,冒险</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-170.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="悍将淫娃" data-genre="情色,动作,武侠" data-year="2024" data-region="中国香港">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">42</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./20.jpg" alt="悍将淫娃" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">悍将淫娃</h2>
+    <p class="text-sm text-gray-500 truncate">武林第一悍将被仇家设计,被迫与最擅长采补之术的妖女关在同一地牢,生死搏杀演变为致命纠缠。</p>
+    <p class="text-xs text-gray-400 mt-1">2024 · 中国香港 · 情色,动作,武侠</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-243.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="明姑娘" data-genre="剧情/悬疑/犯罪" data-year="2024" data-region="中国大陆">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">43</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./93.jpg" alt="明姑娘" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">明姑娘</h2>
+    <p class="text-sm text-gray-500 truncate">全城都在寻找失踪的她,却没人发现她正躲在暗处窥视一切。</p>
+    <p class="text-xs text-gray-400 mt-1">2024 · 中国大陆 · 剧情/悬疑/犯罪</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-252.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="亲密如贼" data-genre="犯罪,爱情,动作" data-year="2024" data-region="法国/意大利">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">44</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./102.jpg" alt="亲密如贼" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">亲密如贼</h2>
+    <p class="text-sm text-gray-500 truncate">一名卧底女警与目标男贼假扮夫妻偷名画,却在任务完成后收到他的结婚证。</p>
+    <p class="text-xs text-gray-400 mt-1">2024 · 法国/意大利 · 犯罪,爱情,动作</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-254.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="老师的椅子" data-genre="悬疑,惊悚,校园" data-year="2024" data-region="韩国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">45</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./104.jpg" alt="老师的椅子" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">老师的椅子</h2>
+    <p class="text-sm text-gray-500 truncate">新任班主任坐在了那把据说被“诅咒”过的椅子上,从此她再也无法离开这间教室。</p>
+    <p class="text-xs text-gray-400 mt-1">2024 · 韩国 · 悬疑,惊悚,校园</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-495.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="将夜2" data-genre="古装,奇幻,动作" data-year="2024" data-region="中国大陆">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">46</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./45.jpg" alt="将夜2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">将夜2</h2>
+    <p class="text-sm text-gray-500 truncate">宁缺带着桑桑继续逃亡,却意外揭开昊天世界的终极秘密,这一次他将直面众神的审判。</p>
+    <p class="text-xs text-gray-400 mt-1">2024 · 中国大陆 · 古装,奇幻,动作</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-515.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="教育向上" data-genre="剧情,喜剧,家庭" data-year="2024" data-region="中国大陆">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">47</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./65.jpg" alt="教育向上" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">教育向上</h2>
+    <p class="text-sm text-gray-500 truncate">一个只想让孩子快乐的“佛系”爸爸,因为误入重点小学的家长群,被迫卷入了一场疯狂的“教育军备竞赛”。</p>
+    <p class="text-xs text-gray-400 mt-1">2024 · 中国大陆 · 剧情,喜剧,家庭</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-560.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="身价" data-genre="剧情,犯罪,黑色幽默" data-year="2024" data-region="中国大陆">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">48</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./110.jpg" alt="身价" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">身价</h2>
+    <p class="text-sm text-gray-500 truncate">一个负债累累的骗子绑架了一个流浪汉,向流浪汉家人索要赎金,却发现流浪汉的“身价”比他自己高出一万倍。</p>
+    <p class="text-xs text-gray-400 mt-1">2024 · 中国大陆 · 剧情,犯罪,黑色幽默</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-744.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="胜利之光" data-genre="剧情/运动/家庭" data-year="2024" data-region="美国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">49</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./144.jpg" alt="胜利之光" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">胜利之光</h2>
+    <p class="text-sm text-gray-500 truncate">德克萨斯州一个小镇的高中橄榄球队,背负着全镇的衰落与希望,新教练试图用一场场胜利找回集体荣誉。</p>
+    <p class="text-xs text-gray-400 mt-1">2024 · 美国 · 剧情/运动/家庭</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-843.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="奇怪的路我们来了" data-genre="剧情,喜剧,公路" data-year="2024" data-region="阿根廷">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">50</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./93.jpg" alt="奇怪的路我们来了" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">奇怪的路我们来了</h2>
+    <p class="text-sm text-gray-500 truncate">一对从未见过的父子,被迫开着一辆随时散架的巴士穿越南美,只为寻找一个不存在的地址。</p>
+    <p class="text-xs text-gray-400 mt-1">2024 · 阿根廷 · 剧情,喜剧,公路</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-852.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="浮世绘" data-genre="剧情,历史" data-year="2024" data-region="日本">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">51</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./102.jpg" alt="浮世绘" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">浮世绘</h2>
+    <p class="text-sm text-gray-500 truncate">她是葛饰北斋的哑女弟子,却用画笔记录下了江户最底层的“浮世”,包括那些从未被画过的女人。</p>
+    <p class="text-xs text-gray-400 mt-1">2024 · 日本 · 剧情,历史</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-950.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="身后那些事儿" data-genre="喜剧,剧情,家庭" data-year="2024" data-region="中国大陆">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">52</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./50.jpg" alt="身后那些事儿" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">身后那些事儿</h2>
+    <p class="text-sm text-gray-500 truncate">东北小城,经营惨淡的丧葬乐队“午夜清风”接到了一个大单,却发现要送走的“客户”竟然是他们的高中班主任。</p>
+    <p class="text-xs text-gray-400 mt-1">2024 · 中国大陆 · 喜剧,剧情,家庭</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1017.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="夏日恋人" data-genre="爱情/剧情/青春" data-year="2024" data-region="意大利/法国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">53</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./117.jpg" alt="夏日恋人" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">夏日恋人</h2>
+    <p class="text-sm text-gray-500 truncate">两个高考失利的少年在意大利渔村假装情侣打工,却在盛夏结束前发现对方是自己曾经网暴过的陌生人。</p>
+    <p class="text-xs text-gray-400 mt-1">2024 · 意大利/法国 · 爱情/剧情/青春</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1050.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="恋爱吧,寨主" data-genre="喜剧/爱情/古装" data-year="2024" data-region="中国大陆">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">54</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./150.jpg" alt="恋爱吧,寨主" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">恋爱吧,寨主</h2>
+    <p class="text-sm text-gray-500 truncate">土匪女寨主为阻止朝廷剿匪,抢了一个落魄书生当压寨夫君,逼他教自己“像淑女一样恋爱”。</p>
+    <p class="text-xs text-gray-400 mt-1">2024 · 中国大陆 · 喜剧/爱情/古装</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1082.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="冉冉之星" data-genre="励志/音乐" data-year="2024" data-region="印度">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">55</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./32.jpg" alt="冉冉之星" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">冉冉之星</h2>
+    <p class="text-sm text-gray-500 truncate">孟买贫民窟的天才歌手,唯一的梦想是让五星级酒店里的富人“听见”他。</p>
+    <p class="text-xs text-gray-400 mt-1">2024 · 印度 · 励志/音乐</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1102.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="杀人电梯" data-genre="惊悚/恐怖" data-year="2024" data-region="中国香港">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">56</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./52.jpg" alt="杀人电梯" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">杀人电梯</h2>
+    <p class="text-sm text-gray-500 truncate">深夜加班的程序员发现,公司电梯每次关门后,都会有一名乘客离奇消失。</p>
+    <p class="text-xs text-gray-400 mt-1">2024 · 中国香港 · 惊悚/恐怖</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1192.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="神秘小镇" data-genre="悬疑/科幻" data-year="2024" data-region="澳大利亚">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">57</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./142.jpg" alt="神秘小镇" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">神秘小镇</h2>
+    <p class="text-sm text-gray-500 truncate">一对情侣自驾误入一座地图上不存在的小镇,发现所有居民都丢失了三年内的记忆。</p>
+    <p class="text-xs text-gray-400 mt-1">2024 · 澳大利亚 · 悬疑/科幻</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1207.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="大奥第二季" data-genre="剧情,历史" data-year="2024" data-region="日本">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">58</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./7.jpg" alt="大奥第二季" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">大奥第二季</h2>
+    <p class="text-sm text-gray-500 truncate">男女逆转的平行时空,女将军的后宫“大奥”迎来了一位能预知未来的神秘美男子。</p>
+    <p class="text-xs text-gray-400 mt-1">2024 · 日本 · 剧情,历史</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1257.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="黑帮大斗法" data-genre="动作/喜剧" data-year="2024" data-region="香港">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">59</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./57.jpg" alt="黑帮大斗法" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">黑帮大斗法</h2>
+    <p class="text-sm text-gray-500 truncate">三名互不相识的卧底警察同时潜入黑帮,却因为互相不知道对方身份而展开了一场乌龙内斗。</p>
+    <p class="text-xs text-gray-400 mt-1">2024 · 香港 · 动作/喜剧</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1263.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="回忆2023" data-genre="爱情,科幻,剧情" data-year="2024" data-region="法国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">60</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./63.jpg" alt="回忆2023" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">回忆2023</h2>
+    <p class="text-sm text-gray-500 truncate">在一场能定向删除记忆的科技普及后,一名女子选择保留关于2023年的所有痛苦回忆,因为她发现那是她唯一真实的感情。</p>
+    <p class="text-xs text-gray-400 mt-1">2024 · 法国 · 爱情,科幻,剧情</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1290.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="女佣变凤凰" data-genre="爱情/喜剧/剧情" data-year="2024" data-region="中国台湾">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">61</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./90.jpg" alt="女佣变凤凰" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">女佣变凤凰</h2>
+    <p class="text-sm text-gray-500 truncate">一个为母还债的女佣被迫假扮失踪的富家千金,却在豪门漩涡中找到了真正的自己。</p>
+    <p class="text-xs text-gray-400 mt-1">2024 · 中国台湾 · 爱情/喜剧/剧情</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1363.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="情惑" data-genre="剧情/爱情/悬疑" data-year="2024" data-region="中国大陆">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">62</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./13.jpg" alt="情惑" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">情惑</h2>
+    <p class="text-sm text-gray-500 truncate">一场精心设计的“偶遇”,让三位都市男女陷入情与欲的罗生门,谁才是真正的猎手?</p>
+    <p class="text-xs text-gray-400 mt-1">2024 · 中国大陆 · 剧情/爱情/悬疑</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1537.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="威震群雄" data-genre="动作、犯罪、江湖" data-year="2024" data-region="中国香港">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">63</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./37.jpg" alt="威震群雄" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">威震群雄</h2>
+    <p class="text-sm text-gray-500 truncate">为了给义父报仇,一个身世成谜的年轻人,凭一己之力搅乱了整个亚洲黑道。</p>
+    <p class="text-xs text-gray-400 mt-1">2024 · 中国香港 · 动作、犯罪、江湖</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1767.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="回到过去拥抱你" data-genre="爱情/奇幻" data-year="2024" data-region="中国大陆">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">64</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./117.jpg" alt="回到过去拥抱你" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">回到过去拥抱你</h2>
+    <p class="text-sm text-gray-500 truncate">一个女孩获得三次回到过去的机会,但她不是去改变未来,而是去跟过去的自己好好告别。</p>
+    <p class="text-xs text-gray-400 mt-1">2024 · 中国大陆 · 爱情/奇幻</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1866.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="真假千金" data-genre="剧情/家庭" data-year="2024" data-region="中国大陆">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">65</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./66.jpg" alt="真假千金" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">真假千金</h2>
+    <p class="text-sm text-gray-500 truncate">落魄的送奶工之女被豪门认回,却发现真正的千金正在她家洗衣做饭。</p>
+    <p class="text-xs text-gray-400 mt-1">2024 · 中国大陆 · 剧情/家庭</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1908.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="恶兽" data-genre="动作、怪兽、灾难" data-year="2024" data-region="韩国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">66</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./108.jpg" alt="恶兽" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">恶兽</h2>
+    <p class="text-sm text-gray-500 truncate">首尔地下深处沉睡的远古恶兽被唤醒,军方秘密实验反噬全城。</p>
+    <p class="text-xs text-gray-400 mt-1">2024 · 韩国 · 动作、怪兽、灾难</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1927.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="女真珠王" data-genre="爱情,商战,历史" data-year="2024" data-region="韩国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">67</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./127.jpg" alt="女真珠王" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">女真珠王</h2>
+    <p class="text-sm text-gray-500 truncate">朝鲜时代唯一的女巨商,她掌控了东亚珍珠贸易命脉,却不知道每晚睡在身边的丈夫,是来抄家的暗行御史。</p>
+    <p class="text-xs text-gray-400 mt-1">2024 · 韩国 · 爱情,商战,历史</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1936.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="恋爱兵法2012" data-genre="爱情、喜剧、剧情" data-year="2024" data-region="韩国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">68</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./136.jpg" alt="恋爱兵法2012" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">恋爱兵法2012</h2>
+    <p class="text-sm text-gray-500 truncate">2012年,一个精通36计的情场浪子,竟然被自己最看不起的“土气”女下属用同样的套路反杀。</p>
+    <p class="text-xs text-gray-400 mt-1">2024 · 韩国 · 爱情、喜剧、剧情</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-376.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="蝴蝶效应2国语" data-genre="科幻/惊悚/剧情" data-year="2023" data-region="中国大陆/美国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">69</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./76.jpg" alt="蝴蝶效应2国语" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">蝴蝶效应2国语</h2>
+    <p class="text-sm text-gray-500 truncate">一个程序员发现他可以修改过去的代码来改变人生,但每次修改都会让一个身边人消失。</p>
+    <p class="text-xs text-gray-400 mt-1">2023 · 中国大陆/美国 · 科幻/惊悚/剧情</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-475.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="失踪网红" data-genre="悬疑" data-year="2023" data-region="巴西">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">70</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./25.jpg" alt="失踪网红" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">失踪网红</h2>
+    <p class="text-sm text-gray-500 truncate">坐拥千万粉丝的健身网红在直播中突然失联,粉丝全网搜寻,却发现她的完美人生全是剧本。</p>
+    <p class="text-xs text-gray-400 mt-1">2023 · 巴西 · 悬疑</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-734.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="我大一朋友与惊人日子" data-genre="青春/喜剧/奇幻" data-year="2023" data-region="韩国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">71</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./134.jpg" alt="我大一朋友与惊人日子" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">我大一朋友与惊人日子</h2>
+    <p class="text-sm text-gray-500 truncate">大一新生意外加入“超能力研究社”,发现全社只有社长一个人真的有超能力。</p>
+    <p class="text-xs text-gray-400 mt-1">2023 · 韩国 · 青春/喜剧/奇幻</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1243.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="立式钢琴 第一季" data-genre="剧情,悬疑,音乐" data-year="2023" data-region="中国大陆">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">72</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./43.jpg" alt="立式钢琴 第一季" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">立式钢琴 第一季</h2>
+    <p class="text-sm text-gray-500 truncate">一架祖传立式钢琴中藏着的遗书,让天才钢琴少女发现了家族跨越三十年的谎言与救赎。</p>
+    <p class="text-xs text-gray-400 mt-1">2023 · 中国大陆 · 剧情,悬疑,音乐</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1367.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="酝酿复仇" data-genre="犯罪、悬疑、动作" data-year="2023" data-region="韩国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">73</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./17.jpg" alt="酝酿复仇" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">酝酿复仇</h2>
+    <p class="text-sm text-gray-500 truncate">最好的酿酒师也是最好的下毒师:他用二十年,让仇人一杯一杯喝掉自己的人生。</p>
+    <p class="text-xs text-gray-400 mt-1">2023 · 韩国 · 犯罪、悬疑、动作</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1531.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="无相劫" data-genre="动作,科幻,惊悚" data-year="2023" data-region="印度">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">74</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./31.jpg" alt="无相劫" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">无相劫</h2>
+    <p class="text-sm text-gray-500 truncate">印度国家安全局的特工为了追捕一个能入侵任何网络的无相黑客,不得不进入了神话模拟世界。</p>
+    <p class="text-xs text-gray-400 mt-1">2023 · 印度 · 动作,科幻,惊悚</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1533.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="幽灵2023" data-genre="恐怖,惊悚,超自然" data-year="2023" data-region="美国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">75</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./33.jpg" alt="幽灵2023" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">幽灵2023</h2>
+    <p class="text-sm text-gray-500 truncate">一群网红为博流量闯入百年凶宅直播“通灵”,却激活了隐藏在网络信号中的数字恶灵,观众也开始离奇死亡。</p>
+    <p class="text-xs text-gray-400 mt-1">2023 · 美国 · 恐怖,惊悚,超自然</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1746.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="磨损" data-genre="悬疑,剧情" data-year="2023" data-region="中国大陆">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">76</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./96.jpg" alt="磨损" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">磨损</h2>
+    <p class="text-sm text-gray-500 truncate">一名程序员发现自己困在同一天,而每次循环他的身体都在加速“磨损”老化。</p>
+    <p class="text-xs text-gray-400 mt-1">2023 · 中国大陆 · 悬疑,剧情</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-447.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="山花" data-genre="剧情,家庭,乡村" data-year="2022" data-region="中国大陆">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">77</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./147.jpg" alt="山花" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">山花</h2>
+    <p class="text-sm text-gray-500 truncate">九十年代湘西山村,一个只有七名学生的代课女教师,用一本破旧字典,为孩子们打开通往山外世界的一扇窗。</p>
+    <p class="text-xs text-gray-400 mt-1">2022 · 中国大陆 · 剧情,家庭,乡村</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-497.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="南部僵尸来袭" data-genre="喜剧,恐怖,动作" data-year="2022" data-region="美国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">78</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./47.jpg" alt="南部僵尸来袭" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">南部僵尸来袭</h2>
+    <p class="text-sm text-gray-500 truncate">美国南部农场主老杰克发现自家玉米地里爬出僵尸,他唯一担心的是它们踩坏了庄稼。</p>
+    <p class="text-xs text-gray-400 mt-1">2022 · 美国 · 喜剧,恐怖,动作</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-35.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="女子警察的逆袭2021" data-genre="喜剧,警务,剧情" data-year="2021" data-region="日本">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">79</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./35.jpg" alt="女子警察的逆袭2021" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">女子警察的逆袭2021</h2>
+    <p class="text-sm text-gray-500 truncate">菜鸟女警与毒舌前辈搭档,在派出所的鸡毛蒜皮和暴力犯罪中,上演爆笑又感人的逆袭故事。</p>
+    <p class="text-xs text-gray-400 mt-1">2021 · 日本 · 喜剧,警务,剧情</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-86.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="就爱你的谎" data-genre="爱情/剧情/音乐" data-year="2021" data-region="日本">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">80</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./86.jpg" alt="就爱你的谎" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">就爱你的谎</h2>
+    <p class="text-sm text-gray-500 truncate">一个失去听觉的过气作曲家,遇到一个用谎言堆砌人生的少女,他要教她用“假话”写出真歌。</p>
+    <p class="text-xs text-gray-400 mt-1">2021 · 日本 · 爱情/剧情/音乐</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-464.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="幸福来接龙" data-genre="家庭,喜剧,温情" data-year="2021" data-region="中国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">81</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./14.jpg" alt="幸福来接龙" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">幸福来接龙</h2>
+    <p class="text-sm text-gray-500 truncate">为了逗孙子开心,爷爷在小区群里发起“幸福接龙”,结果整个社区都开始接龙自己最丢脸的幸福事。</p>
+    <p class="text-xs text-gray-400 mt-1">2021 · 中国 · 家庭,喜剧,温情</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1371.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="绝地防线" data-genre="动作,战争,科幻" data-year="2021" data-region="美国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">82</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./21.jpg" alt="绝地防线" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">绝地防线</h2>
+    <p class="text-sm text-gray-500 truncate">2067年,一支被遗忘的步兵排驻守废弃防线,对抗拥有无限再生能力的AI军团。</p>
+    <p class="text-xs text-gray-400 mt-1">2021 · 美国 · 动作,战争,科幻</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1697.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="绑架老大" data-genre="喜剧,犯罪,黑色幽默" data-year="2021" data-region="中国台湾">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">83</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./47.jpg" alt="绑架老大" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">绑架老大</h2>
+    <p class="text-sm text-gray-500 truncate">三个欠高利贷的废柴决定绑架黑帮老大换赎金,却发现老大正求着别人绑架他。</p>
+    <p class="text-xs text-gray-400 mt-1">2021 · 中国台湾 · 喜剧,犯罪,黑色幽默</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1813.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="巨蟒" data-genre="惊悚,冒险,灾难" data-year="2019" data-region="澳大利亚,美国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">84</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./13.jpg" alt="巨蟒" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">巨蟒</h2>
+    <p class="text-sm text-gray-500 truncate">亚马逊雨林深处,一支纪录片摄制组发现了一条能吞噬时间的巨蟒。</p>
+    <p class="text-xs text-gray-400 mt-1">2019 · 澳大利亚,美国 · 惊悚,冒险,灾难</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-579.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="驴孩朱利安" data-genre="剧情" data-year="2018" data-region="法国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">85</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./129.jpg" alt="驴孩朱利安" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">驴孩朱利安</h2>
+    <p class="text-sm text-gray-500 truncate">天生有着驴蹄的少年被卖入马戏团,在观众的尖叫与怜悯中寻找生而为人的尊严。</p>
+    <p class="text-xs text-gray-400 mt-1">2018 · 法国 · 剧情</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1748.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="周末惊魂" data-genre="恐怖,悬疑,青少年" data-year="2018" data-region="美国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">86</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./98.jpg" alt="周末惊魂" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">周末惊魂</h2>
+    <p class="text-sm text-gray-500 truncate">五个好友去湖边木屋过周末,却发现有一台摄像机在全程直播他们被屠杀。</p>
+    <p class="text-xs text-gray-400 mt-1">2018 · 美国 · 恐怖,悬疑,青少年</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1189.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="成人们" data-genre="剧情,家庭" data-year="2017" data-region="日本">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">87</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./139.jpg" alt="成人们" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">成人们</h2>
+    <p class="text-sm text-gray-500 truncate">离家二十年的游子因父亲去世返乡,却发现母亲和哥哥过着“幼稚”的共生生活。</p>
+    <p class="text-xs text-gray-400 mt-1">2017 · 日本 · 剧情,家庭</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1963.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="波兰爱经" data-genre="剧情/传记/爱情" data-year="2017" data-region="波兰">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">88</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./13.jpg" alt="波兰爱经" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">波兰爱经</h2>
+    <p class="text-sm text-gray-500 truncate">真实事件改编,一位波兰女医生如何在冷战铁幕下写出风靡全球的性学著作《性爱的艺术》。</p>
+    <p class="text-xs text-gray-400 mt-1">2017 · 波兰 · 剧情/传记/爱情</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-743.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="我不是你的黑鬼" data-genre="纪录片/历史/传记" data-year="2016" data-region="美国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">89</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./143.jpg" alt="我不是你的黑鬼" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">我不是你的黑鬼</h2>
+    <p class="text-sm text-gray-500 truncate">已故作家鲍德温未完成的著作,通过他的视角串联起三位被暗杀的民权领袖。</p>
+    <p class="text-xs text-gray-400 mt-1">2016 · 美国 · 纪录片/历史/传记</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1615.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="夜半梳头" data-genre="恐怖" data-year="2014" data-region="中国香港">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">90</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./115.jpg" alt="夜半梳头" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">夜半梳头</h2>
+    <p class="text-sm text-gray-500 truncate">香港深水埗一栋旧楼里,流传着凌晨两点对着发霉镜子梳头会看见“另一个自己”的传说。</p>
+    <p class="text-xs text-gray-400 mt-1">2014 · 中国香港 · 恐怖</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-148.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="志气" data-genre="运动,励志,青春" data-year="2013" data-region="中国台湾">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">91</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./148.jpg" alt="志气" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">志气</h2>
+    <p class="text-sm text-gray-500 truncate">一群被退队的拔河少女,在垃圾场旁的水泥地上练出世界冠军。</p>
+    <p class="text-xs text-gray-400 mt-1">2013 · 中国台湾 · 运动,励志,青春</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-367.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="冰封之地" data-genre="惊悚、犯罪、传记" data-year="2013" data-region="美国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">92</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./67.jpg" alt="冰封之地" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">冰封之地</h2>
+    <p class="text-sm text-gray-500 truncate">阿拉斯加最臭名昭著的连环杀手专挑妓女下手,只有一个警察赌上职业生涯也要抓到他。</p>
+    <p class="text-xs text-gray-400 mt-1">2013 · 美国 · 惊悚、犯罪、传记</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-493.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="肮脏的战争" data-genre="战争/惊悚" data-year="2013" data-region="美国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">93</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./43.jpg" alt="肮脏的战争" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">肮脏的战争</h2>
+    <p class="text-sm text-gray-500 truncate">一名记者深入调查美军的无人机战争,发现所谓的“精准打击”背后全是平民的血。</p>
+    <p class="text-xs text-gray-400 mt-1">2013 · 美国 · 战争/惊悚</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1235.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="妈妈别哭" data-genre="犯罪/剧情/复仇" data-year="2012" data-region="韩国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">94</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./35.jpg" alt="妈妈别哭" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">妈妈别哭</h2>
+    <p class="text-sm text-gray-500 truncate">女儿被侵害后加害者因未成年无罪释放,单亲妈妈决定用自己的方式讨回公道。</p>
+    <p class="text-xs text-gray-400 mt-1">2012 · 韩国 · 犯罪/剧情/复仇</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1310.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="爱" data-genre="剧情,爱情,家庭" data-year="2012" data-region="法国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">95</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./110.jpg" alt="爱" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">爱</h2>
+    <p class="text-sm text-gray-500 truncate">一对80多岁的退休音乐教师夫妇,在妻子中风瘫痪后,丈夫用一生最深沉的爱,完成了最后一场告别。</p>
+    <p class="text-xs text-gray-400 mt-1">2012 · 法国 · 剧情,爱情,家庭</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1221.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="黑蝶漫舞" data-genre="剧情/传记/战争" data-year="2011" data-region="南非">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">96</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./21.jpg" alt="黑蝶漫舞" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">黑蝶漫舞</h2>
+    <p class="text-sm text-gray-500 truncate">南非第一任黑人女总统的前身——一位白人女诗人,用一首诗点燃了反种族隔离的火种,并最终死在当局的炸弹下。</p>
+    <p class="text-xs text-gray-400 mt-1">2011 · 南非 · 剧情/传记/战争</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1640.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="我为谁狂" data-genre="喜剧爱情" data-year="1999" data-region="中国香港">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">97</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./140.jpg" alt="我为谁狂" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">我为谁狂</h2>
+    <p class="text-sm text-gray-500 truncate">四名都市男女在爱情里迷失,为了赢得心上人,不惜闹出连串疯狂乌龙。</p>
+    <p class="text-xs text-gray-400 mt-1">1999 · 中国香港 · 喜剧爱情</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-1922.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="拯救大兵瑞恩" data-genre="战争,剧情,历史" data-year="1998" data-region="美国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">98</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./122.jpg" alt="拯救大兵瑞恩" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">拯救大兵瑞恩</h2>
+    <p class="text-sm text-gray-500 truncate">诺曼底登陆后,八人小队深入敌后寻找一个伞兵,只因为他三个哥哥都战死了。</p>
+    <p class="text-xs text-gray-400 mt-1">1998 · 美国 · 战争,剧情,历史</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-179.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="刚果惊魂" data-genre="动作,冒险,科幻" data-year="1995" data-region="美国">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">99</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./29.jpg" alt="刚果惊魂" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">刚果惊魂</h2>
+    <p class="text-sm text-gray-500 truncate">一支探险队深入刚果雨林寻找神秘钻石矿,却发现守护那里的不是猛兽,而是一支训练有素、会说手语的致命猩猩军团。</p>
+    <p class="text-xs text-gray-400 mt-1">1995 · 美国 · 动作,冒险,科幻</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+<a href="./movie-598.html" class="group flex items-center space-x-4 p-4 rounded-xl hover:bg-amber-50 transition-colors duration-200 bg-white shadow-sm" data-movie-card data-title="扭计双星第二辑粤语" data-genre="喜剧,动作" data-year="1986" data-region="中国香港">
+  <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center font-bold bg-gray-100 text-gray-600">100</div>
+  <div class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden bg-amber-100">
+    <img src="./148.jpg" alt="扭计双星第二辑粤语" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy">
+  </div>
+  <div class="flex-1 min-w-0">
+    <h2 class="font-bold text-gray-800 truncate group-hover:text-amber-600 transition-colors duration-200">扭计双星第二辑粤语</h2>
+    <p class="text-sm text-gray-500 truncate">两个专骗坏人的老千搭档重出江湖,用五花八门的奇招诈翻全港黑帮。</p>
+    <p class="text-xs text-gray-400 mt-1">1986 · 中国香港 · 喜剧,动作</p>
+  </div>
+  <div class="flex items-center flex-shrink-0 text-amber-600 font-bold"><span class="mr-1">★</span>9.8</div>
+</a>
+    </div>
+  </section>
+</main>
+<footer class="bg-gradient-to-b from-gray-800 to-gray-900 text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <div class="flex items-center space-x-2 mb-4">
+          <span class="bg-amber-500 p-2 rounded-full logo-mark footer-logo">▶</span>
+          <h2 class="text-xl font-bold">高清剧集大全</h2>
+        </div>
+        <p class="text-gray-400 text-sm leading-relaxed">围绕推荐电视剧整理热门剧集和精选片单，覆盖多题材内容，适合按热度筛选。</p>
+      </div>
+      <div>
+        <h2 class="text-lg font-semibold mb-4 text-amber-400">快速链接</h2>
+        <ul class="space-y-2">
+          <li><a href="./index.html" class="text-gray-400 hover:text-amber-400 transition-colors duration-200 text-sm">首页</a></li>
+          <li><a href="./categories.html" class="text-gray-400 hover:text-amber-400 transition-colors duration-200 text-sm">分类浏览</a></li>
+          <li><a href="./rankings.html" class="text-gray-400 hover:text-amber-400 transition-colors duration-200 text-sm">排行榜</a></li>
+          <li><a href="./search.html" class="text-gray-400 hover:text-amber-400 transition-colors duration-200 text-sm">全站搜索</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-lg font-semibold mb-4 text-amber-400">精选分类</h2>
+        <ul class="space-y-2">
+            <li><a href="./category-drama.html" class="text-gray-400 hover:text-amber-400 transition-colors duration-200 text-sm">剧情佳作</a></li>
+            <li><a href="./category-comedy.html" class="text-gray-400 hover:text-amber-400 transition-colors duration-200 text-sm">喜剧热播</a></li>
+            <li><a href="./category-mystery.html" class="text-gray-400 hover:text-amber-400 transition-colors duration-200 text-sm">悬疑惊悚</a></li>
+            <li><a href="./category-action.html" class="text-gray-400 hover:text-amber-400 transition-colors duration-200 text-sm">动作战争</a></li>
+            <li><a href="./category-romance.html" class="text-gray-400 hover:text-amber-400 transition-colors duration-200 text-sm">爱情生活</a></li>
+            <li><a href="./category-fantasy.html" class="text-gray-400 hover:text-amber-400 transition-colors duration-200 text-sm">科幻奇幻</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-lg font-semibold mb-4 text-amber-400">热门关键词</h2>
+        <div class="flex flex-wrap gap-2">
+          <a href="./search.html?q=%E6%8E%A8%E8%8D%90%E7%94%B5%E8%A7%86%E5%89%A7" class="footer-chip">推荐电视剧</a>
+          <a href="./search.html?q=%E7%83%AD%E9%97%A8%E7%94%B5%E8%A7%86%E5%89%A7" class="footer-chip">热门电视剧</a>
+          <a href="./search.html?q=%E9%AB%98%E6%B8%85%E6%92%AD%E6%94%BE" class="footer-chip">高清播放</a>
+          <a href="./search.html?q=%E7%B2%BE%E9%80%89%E5%89%A7%E9%9B%86" class="footer-chip">精选剧集</a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
+      <p>© 2026 高清剧集大全 版权所有</p>
+    </div>
+  </div>
+</footer>
+  <script src="./assets/app.js" defer></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?60fa60a3da050a73eefefaaebe0afaf5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
